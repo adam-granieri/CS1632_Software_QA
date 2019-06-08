@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+# List of Gems
+gem "sinatra"
+gem "sinatra-contrib"

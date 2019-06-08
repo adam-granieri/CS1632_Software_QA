@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+        <%# If we still need user info%>
+        <% if @table.nil? %>
+            <form>
+                <label>True Symbol:</label>
+                <input type='text' name='t_symbol' /><br>
+                <label>False Symbol:</label>
+                <input type='text' name='f_symbol' /><br>
+                <label>Size (2^x):</label>
+                <input type='text' name='pow' /><br>
+                <input type='submit' value='Show Truth Table' name='submit_table_data'><br>
+                <a href='/'>Reload Page</a>
+            </form>
+        <% else %>
+            <table style="width:10%">
+                <%# This is the title row%>
+                <tr>
+                    <%# Generate loop for title indexes%>
+                    <% (@power.to_i-1).downto(0) do |i| %>
+                    <th><p><%= i %></th>
+                    <% end %>
+                    <th>AND</th>
+                    <th>OR</th>
+                    <th>NAND</th>
+                    <th>NOR</th>
+                    <th>XOR</th>
+                    <th>SINGLE</th>
+                </tr>
+                <%# Loop for each row where we determine what goes in each cell%>
+                <% @rows.each do |j| %>
+                    <%# Start next row%>
+                    <tr>
+                    <% j.each do |k| %>
+                        <% if k.to_i == 1 %>
+                            <td><p><%= @truth_symbol %></td>
+                        <% else %>
+                            <td><p><%= @false_symbol %></td>
+                        <% end %>
+                    <% end %>
+                    </tr>
+                <% end %>
+            </table>
+            <a href='/'>Back to main page</a>
+        <% end %>
+    </body>
+</html>

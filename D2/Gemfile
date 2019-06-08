@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+#List of gems
+gem "minitest"
+gem "simplecov"
+gem "rubocop"
+gem "reek"

@@ -1,0 +1,72 @@
+{
+    "locations": [
+        {
+            "name": "Enumerable Canyon",
+            "start": true,
+            "max_rubies": 1,
+            "max_fake_rubies": 1,
+            "neighbors": [
+                "Monkey Patch City",
+                "Duck Type Beach"
+            ]
+        },
+        {
+            "name": "Duck Type Beach",
+            "max_rubies": 2,
+            "max_fake_rubies": 2,
+            "neighbors": [
+                "Enumerable Canyon",
+                "Matzburg"
+            ]
+        },
+        {
+            "name": "Monkey Patch City",
+            "max_rubies": 1,
+            "max_fake_rubies": 1,
+            "neighbors": [
+                "Nil Town",
+                "Matzburg",
+                "Enumerable Canyon"
+            ]
+        },
+        {
+            "name": "Nil Town",
+            "max_rubies": 0,
+            "max_fake_rubies": 3,
+            "neighbors": [
+                "Monkey Patch City",
+                "Hash Crossing"
+            ]
+        },
+        {
+            "name": "Matzburg",
+            "max_rubies": 3,
+            "max_fake_rubies": 0,
+            "neighbors": [
+                "Monkey Patch City",
+                "Duck Type Beach",
+                "Hash Crossing",
+                "Dynamic Palisades"
+            ]
+        },
+        {
+            "name": "Hash Crossing",
+            "max_rubies": 2,
+            "max_fake_rubies": 2,
+            "neighbors": [
+                "Nil Town",
+                "Matzburg",
+                "Dynamic Palisades"
+            ]
+        },
+        {
+            "name": "Dynamic Palisades",
+            "max_rubies": 2,
+            "max_fake_rubies": 2,
+            "neighbors": [
+                "Hash Crossing",
+                "Matzburg"
+            ]
+        }
+    ]
+}

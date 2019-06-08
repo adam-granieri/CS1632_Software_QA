@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <% if @bad_input %>
+            <h1>ERROR</h1>
+            <br>
+            <h2>Invalid parameters</h2>
+            <br>
+            Please enter:
+            <p>
+            <ol type="1">
+                <li>A single-character true symbol</li>
+                <li>A single-character false symbol</li>
+                <li>A size greater than or equal to 2</li>
+                <li>Different characters for the true and false symbols</li> 
+            </ol>
+            <p>
+            <a href='/'>Back to main</a>
+        <% else %>
+            <h1>ERROR</h1>
+            <br>
+            <h2>Invalid address.</h2>
+            <br>
+            <a href='/'>Back to main page</a>
+        <% end %>
+    </body>
+</html>
