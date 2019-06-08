@@ -8,4 +8,4 @@ A simple version of gold rush game to demo ruby class functionality with the sim
 A webpage written in ruby and embedded ruby to generate truth tables.  This project was to learn about web and UI tests with Selenium and Katalon.
 
 #### Deliverable 4
-A mock blockchain has verification program written in ruby.  This project was to compare ruby performance with the simplecov, minitest and flamegraph gems.
+A mock blockchain hash verification program written in ruby.  This project was to compare ruby performance with the simplecov, minitest and flamegraph gems.
